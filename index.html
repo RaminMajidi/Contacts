@@ -1,0 +1,52 @@
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacts</title>
+</head>
+
+<body>
+    <header>
+        <h1>برنامه دفترچه تلفن</h1>
+    </header>
+    <main>
+        <form id="frmContact">
+            <div>
+                <label for="inName">نام مخاطب :</label>
+                <input type="text" class="input-data" id="inName" required>
+            </div>
+            <div>
+                <label for="inNumber">شماره تلفن :</label>
+                <input type="text" class="input-data" id="inNumber" required>
+            </div>
+            <div>
+                <input type="submit" value="ذخیره" id="btn-save">
+            </div>
+        </form>
+        <br>
+        <section class="contact-container">
+            <ul id="contacts">
+            </ul>
+        </section>
+        <section class="update-container">
+            <h2>ویرایش مخاطب</h2>
+            <hr>
+            <div>
+                <label for="in-updateName">نام مخاطب : </label>
+                <input type="text" id="in-updateName" required><br>
+                <label for="in-updateNumber">شماره تلفن : </label>
+                <input type="text" id="in-updateNumber" required>
+            </div>
+            <div>
+                <button id="btn-save-update">ذخیره</button>
+                <button id="btn-cancel-update">انصراف</button>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
